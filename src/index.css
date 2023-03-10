@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.float {
+  animation: float-animation 2.5s infinite ease-in-out;
+}
+
+@keyframes float-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+
+.clear-sky {
+  background-image: url('../../img/clear-sky.jpg');
+}
+.broken-clouds {
+  background-image: url('../img/broken-clouds.jpg');
+}
+.few-clouds {
+  background-image: url('../img/few-clouds.jpg');
+}
+.scattered-clouds {
+  background-image: url('../img/scattered-clouds.jpg');
+}
+.shower-rain {
+  background-image: url('../img/shower-rain.jpg');
+}
+.light-rain {
+  background-image: url('../img/light-rain.jpg');
+}
+.light-snow {
+  background-image: url('../img/light-snow.jpg');
+}
+.thunderstorm {
+  background-image: url('../img/thunderstorm.jpg');
+}
+.snow {
+  background-image: url('../img/snow.jpg');
+}
+.overcast-clouds {
+  background-image: url('../img/overcast-clouds.jpg');
+}
+.fog,
+.mist {
+  background-image: url('../img/mist.jpg');
+}
+
+@media (max-width: 710px) {
+  .info-container {
+    display: flex;
+  }
+  .main-data-container {
+    justify-content: center;
+  }
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  padding-top: 50px;
+}
+.app-title {
+  padding-rigth: 50px;
+}
